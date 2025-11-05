@@ -27,6 +27,16 @@ An interactive lead generation system built on an agentic framework that intelli
 - **Agentic Architecture** - Hierarchical specialized agents for different tasks
 - **Cloud Deployment** - Ready for Google Cloud Agent Engine deployment
 
+### 4. Production Quality Code Review Assistant (`/adk-code-review-assistant/`)
+An intelligent, multi-agent code review system powered by Google ADK and Gemini models for comprehensive Python code analysis:
+- **Dual-Pipeline Architecture** - Review Pipeline + Fix Pipeline with specialized agents
+- **Code Structure Analysis** - AST parsing to identify functions, classes, and structural issues
+- **PEP 8 Style Checking** - Automated style validation with weighted scoring
+- **Automated Testing** - Generates and executes 15-20 comprehensive test cases
+- **Personalized Feedback** - Constructive feedback that adapts based on submission history
+- **Automated Code Fixing** - Iterative fix attempts through loop architecture with validation
+- **Production Deployment** - Support for Agent Engine, Cloud Run, and GKE deployments
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -58,25 +68,37 @@ poetry install
 poetry run adk run LeadGenerationResearch
 ```
 
+#### Production Quality Code Review Assistant
+```bash
+cd adk-code-review-assistant
+pip install poetry
+poetry install
+./deploy.sh local  # For local development
+# OR
+./deploy.sh cloud-run  # For production deployment
+```
+
 ## 📖 Documentation
 
 Each project contains comprehensive documentation:
 
 - **Software Bug Assistant**: Full setup guide for local and cloud deployment with PostgreSQL, MCP Toolbox, and RAG capabilities
 - **Gemini CLI on ADK**: Development workflow automation with Makefile commands and deployment scripts
+- **Lead Generation Agent**: Interactive agentic framework for business lead discovery with pattern analysis
+- **Code Review Assistant**: Production-quality multi-agent system for comprehensive Python code analysis and automated fixing
 
 ## 🏗️ Architecture
 
 All projects demonstrate different aspects of ADK development:
 
-| Feature | Software Bug Assistant | Gemini CLI on ADK | Lead Generation Agent |
-|---------|----------------------|-------------------|---------------------|
-| **Use Case** | IT Support & Bug Management | Development Workflow Automation | Business Lead Discovery |
-| **Complexity** | Intermediate | Advanced | Advanced |
-| **Database** | PostgreSQL with RAG | N/A | N/A |
-| **External APIs** | GitHub, Google Search, StackOverflow | Gemini CLI Integration | Google Search, Web Research |
-| **Architecture** | Single Agent + MCP | CLI Integration | Multi-Agent Hierarchy |
-| **Deployment** | Cloud Run + Cloud SQL | Cloud Run | Agent Engine + AgentSpace |
+| Feature | Software Bug Assistant | Gemini CLI on ADK | Lead Generation Agent | Code Review Assistant |
+|---------|----------------------|-------------------|---------------------|---------------------|
+| **Use Case** | IT Support & Bug Management | Development Workflow Automation | Business Lead Discovery | Code Quality & Education |
+| **Complexity** | Intermediate | Advanced | Advanced | Production Quality |
+| **Database** | PostgreSQL with RAG | N/A | N/A | PostgreSQL/Vertex AI Sessions |
+| **External APIs** | GitHub, Google Search, StackOverflow | Gemini CLI Integration | Google Search, Web Research | Built-in Code Execution |
+| **Architecture** | Single Agent + MCP | CLI Integration | Multi-Agent Hierarchy | Dual-Pipeline Multi-Agent |
+| **Deployment** | Cloud Run + Cloud SQL | Cloud Run | Agent Engine + AgentSpace | Agent Engine + Cloud Run + GKE |
 
 ## 🔧 Development
 
@@ -99,6 +121,16 @@ All projects demonstrate different aspects of ADK development:
 - User-controlled decision points for quality assurance
 - Comprehensive reporting with sources and analysis
 
+### Code Review Assistant Features
+- Comprehensive Python code analysis with AST parsing
+- PEP 8 style checking with detailed violation reports
+- Automated test generation and execution (15-20 tests per submission)
+- Personalized feedback with improvement tracking over time
+- Automated code fixing through iterative refinement loops
+- Session persistence and progress tracking
+- Production-ready deployment options (local, Cloud Run, Agent Engine)
+- Built-in observability with Cloud Trace integration
+
 ## 🌟 Getting Started
 
 1. **Clone this repository**
@@ -111,6 +143,7 @@ All projects demonstrate different aspects of ADK development:
    - For bug management: `cd software_bug_assistant && cat README.md`
    - For development automation: `cd gemini-cli-on-adk && cat README.md`
    - For lead generation: `cd leadGenerationAgentADK && cat README.md`
+   - For code review: `cd adk-code-review-assistant && cat README.md`
 
 3. **Set up your environment variables**
    - Get Google API key from [AI Studio](https://aistudio.google.com/apikey)
@@ -121,7 +154,8 @@ All projects demonstrate different aspects of ADK development:
 1. **Start with Software Bug Assistant** - Learn ADK basics, database integration, and MCP
 2. **Progress to Gemini CLI** - Explore advanced workflows and development automation
 3. **Advance to Lead Generation Agent** - Master multi-agent architectures and interactive workflows
-4. **Deploy to Cloud** - Scale your agents with Google Cloud Run and Agent Engine
+4. **Master Code Review Assistant** - Build production-quality systems with dual-pipeline architecture
+5. **Deploy to Cloud** - Scale your agents with Google Cloud Run, Agent Engine, and GKE
 
 ## 🤝 Contributing
 
