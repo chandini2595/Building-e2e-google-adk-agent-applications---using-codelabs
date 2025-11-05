@@ -4,7 +4,7 @@ This repository contains multiple Google ADK (Agent Development Kit) sample appl
 
 ## 📁 Projects Overview
 
-### 1. Software Bug Assistant (`/software_bug_assistant/`)
+### Software Bug Assistant (`/software_bug_assistant/`)
 A comprehensive IT support agent that helps triage, manage, and resolve software issues using:
 - **PostgreSQL database** for internal ticket management
 - **GitHub MCP server** for external issue tracking
@@ -12,14 +12,16 @@ A comprehensive IT support agent that helps triage, manage, and resolve software
 - **Google Search** for external knowledge
 - **StackOverflow integration** for community solutions
 
-### 2. Gemini CLI on ADK (`/gemini-cli-on-adk/`)
+
+
+### Gemini CLI on ADK (`/gemini-cli-on-adk/`)
 An advanced development workflow agent that integrates Gemini CLI's non-interactive mode with ADK for:
 - **Automated code analysis** without manual file selection
 - **Intelligent development task execution**
 - **Streamlined codebase insights**
 - **Command automation** based on analysis results
 
-### 3. Lead Generation Agent ADK (`/leadGenerationAgentADK/`)
+### Lead Generation Agent ADK (`/leadGenerationAgentADK/`)
 An interactive lead generation system built on an agentic framework that intelligently discovers investment patterns and identifies new leads:
 - **Pattern Discovery** - Analyzes successful companies to understand pre-investment signals
 - **Lead Generation** - Uses discovered patterns to find high-potential prospects
@@ -27,7 +29,7 @@ An interactive lead generation system built on an agentic framework that intelli
 - **Agentic Architecture** - Hierarchical specialized agents for different tasks
 - **Cloud Deployment** - Ready for Google Cloud Agent Engine deployment
 
-### 4. Production Quality Code Review Assistant (`/adk-code-review-assistant/`)
+### Production Quality Code Review Assistant (`/adk-code-review-assistant/`)
 An intelligent, multi-agent code review system powered by Google ADK and Gemini models for comprehensive Python code analysis:
 - **Dual-Pipeline Architecture** - Review Pipeline + Fix Pipeline with specialized agents
 - **Code Structure Analysis** - AST parsing to identify functions, classes, and structural issues
@@ -36,6 +38,18 @@ An intelligent, multi-agent code review system powered by Google ADK and Gemini 
 - **Personalized Feedback** - Constructive feedback that adapts based on submission history
 - **Automated Code Fixing** - Iterative fix attempts through loop architecture with validation
 - **Production Deployment** - Support for Agent Engine, Cloud Run, and GKE deployments
+
+Youtube Links:
+
+https://youtu.be/2GuM02RBbEQ
+
+https://youtu.be/GJIUW8u3AoQ
+
+https://youtu.be/Z7qNeKmhxYA
+
+https://youtu.be/xgp49PzBzcI
+
+https://youtu.be/v0A54Ng5Bg4
 
 ## 🚀 Quick Start
 
