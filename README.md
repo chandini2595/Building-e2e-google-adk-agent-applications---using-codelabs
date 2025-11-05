@@ -19,6 +19,14 @@ An advanced development workflow agent that integrates Gemini CLI's non-interact
 - **Streamlined codebase insights**
 - **Command automation** based on analysis results
 
+### 3. Lead Generation Agent ADK (`/leadGenerationAgentADK/`)
+An interactive lead generation system built on an agentic framework that intelligently discovers investment patterns and identifies new leads:
+- **Pattern Discovery** - Analyzes successful companies to understand pre-investment signals
+- **Lead Generation** - Uses discovered patterns to find high-potential prospects
+- **Interactive Workflow** - User-guided decision making at critical points
+- **Agentic Architecture** - Hierarchical specialized agents for different tasks
+- **Cloud Deployment** - Ready for Google Cloud Agent Engine deployment
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -42,6 +50,14 @@ make install
 make playground
 ```
 
+#### Lead Generation Agent ADK
+```bash
+cd leadGenerationAgentADK
+pip install poetry
+poetry install
+poetry run adk run LeadGenerationResearch
+```
+
 ## 📖 Documentation
 
 Each project contains comprehensive documentation:
@@ -51,15 +67,16 @@ Each project contains comprehensive documentation:
 
 ## 🏗️ Architecture
 
-Both projects demonstrate different aspects of ADK development:
+All projects demonstrate different aspects of ADK development:
 
-| Feature | Software Bug Assistant | Gemini CLI on ADK |
-|---------|----------------------|-------------------|
-| **Use Case** | IT Support & Bug Management | Development Workflow Automation |
-| **Complexity** | Intermediate | Advanced |
-| **Database** | PostgreSQL with RAG | N/A |
-| **External APIs** | GitHub, Google Search, StackOverflow | Gemini CLI Integration |
-| **Deployment** | Cloud Run + Cloud SQL | Cloud Run |
+| Feature | Software Bug Assistant | Gemini CLI on ADK | Lead Generation Agent |
+|---------|----------------------|-------------------|---------------------|
+| **Use Case** | IT Support & Bug Management | Development Workflow Automation | Business Lead Discovery |
+| **Complexity** | Intermediate | Advanced | Advanced |
+| **Database** | PostgreSQL with RAG | N/A | N/A |
+| **External APIs** | GitHub, Google Search, StackOverflow | Gemini CLI Integration | Google Search, Web Research |
+| **Architecture** | Single Agent + MCP | CLI Integration | Multi-Agent Hierarchy |
+| **Deployment** | Cloud Run + Cloud SQL | Cloud Run | Agent Engine + AgentSpace |
 
 ## 🔧 Development
 
@@ -75,6 +92,13 @@ Both projects demonstrate different aspects of ADK development:
 - Command execution without manual intervention
 - Contextual codebase insights
 
+### Lead Generation Agent Features
+- Interactive pattern discovery from successful companies
+- Predictive lead identification using learned patterns
+- Multi-phase agentic workflow (learning → prediction)
+- User-controlled decision points for quality assurance
+- Comprehensive reporting with sources and analysis
+
 ## 🌟 Getting Started
 
 1. **Clone this repository**
@@ -86,6 +110,7 @@ Both projects demonstrate different aspects of ADK development:
 2. **Choose your project and follow the specific README**
    - For bug management: `cd software_bug_assistant && cat README.md`
    - For development automation: `cd gemini-cli-on-adk && cat README.md`
+   - For lead generation: `cd leadGenerationAgentADK && cat README.md`
 
 3. **Set up your environment variables**
    - Get Google API key from [AI Studio](https://aistudio.google.com/apikey)
@@ -95,7 +120,8 @@ Both projects demonstrate different aspects of ADK development:
 
 1. **Start with Software Bug Assistant** - Learn ADK basics, database integration, and MCP
 2. **Progress to Gemini CLI** - Explore advanced workflows and development automation
-3. **Deploy to Cloud** - Scale your agents with Google Cloud Run
+3. **Advance to Lead Generation Agent** - Master multi-agent architectures and interactive workflows
+4. **Deploy to Cloud** - Scale your agents with Google Cloud Run and Agent Engine
 
 ## 🤝 Contributing
 
