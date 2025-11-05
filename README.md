@@ -1,5 +1,7 @@
 # Software Bug Assistant - ADK Python Sample Agent
 
+> **Note**: This is part of the "Building e2e google adk agent applications - using codelabs" project.
+
 [![YouTube](https://img.shields.io/badge/Watch-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtu.be/5ZmaWY7UX6k?si=ZbtTScrOls6vp7CH)
 [![Google Cloud](https://img.shields.io/badge/Read_Blog-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)](https://cloud.google.com/blog/topics/developers-practitioners/tools-make-an-agent-from-zero-to-assistant-with-adk?e=48754805?utm_source%3Dtwitter?utm_source%3Dlinkedin)
 
@@ -647,4 +649,4 @@ You can clean up this agent sample by:
 - Deleting the [Artifact Registry](https://console.cloud.google.com/artifacts). 
 - Deleting the two [Cloud Run Services](https://console.cloud.google.com/run). 
 - Deleting the [Cloud SQL instance](https://console.cloud.google.com/sql/instances). 
-- Deleting the [Secret Manager secret](https://console.cloud.google.com/security/secret-manager). 
+- Deleting the [Secret Manager secret](https://console.cloud.google.com/security/secret-manager).
